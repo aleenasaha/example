@@ -1,1 +1,40 @@
-<h1> I am here </h1>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css"/>
+      <link rel="stylesheet" href="css/jwplayer.vb-sdk-plugin.css"/>
+      <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery.voicebase.js"></script>
+      <script type="text/javascript" src="js/jquery.zclip.js"></script>
+      <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+      <script type="text/javascript" src="http://jwpsrv.com/library/qhNfTJFiEeK7LSIACpYGxA.js"></script>
+        <style type="text/css">
+            .content {
+                width: 840px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div id="jwplayer">
+            </div>
+            <script type='text/javascript'>
+   jQuery(document).ready(function(){
+        jwplayer('playerBlock').setup({
+            file: 'https://www.voicebase.com/my_account/voice_file_detail/1745958',
+            primary: "flash",
+            width: '792',
+            height: '480'
+        });
+        jQuery('#playerBlock').voicebase({
+            playerId: 'playerBlock',
+            playerType: 'jwplayer',
+            mediaID: '54245f7c6e9b7',
+            apikey: '98B3E98C-001C-1E0A-4272-1F4FC0F5423D',
+            password: 'whitesky'
+        });
+    });
+</script>
+    </head>
+</html>
