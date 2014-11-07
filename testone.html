@@ -1,7 +1,50 @@
 <html>
+	<head>
+        <title>VoiceBase Youtube - Video</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="//demo.voicsebasejwplayer.dev3.sibers.com/v3/css/jwplayer.vb-sdk-plugin.css"/>
+
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/lib/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fuse.js/1.2.1/fuse.min.js"></script>
+
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/subtitles/YoutubeSubtitles.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/subtitles/modules/YspApi.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/subtitles/modules/YspCommon.js"></script>
+
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/main.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/common.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/view.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/helper.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/templates.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/players.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/events.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/api.js"></script>
+        <script type="text/javascript" src="//demo.voicsebasejwplayer.dev3.sibers.com/v3/js/modules/methods.js"></script>
+
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/zclip/1.1.2/jquery.zclip.min.js"></script>
+        </head>
 	<body>
 		<h1> Websites take forever </h1>
-		<iframe width="560" height="315" src="//www.youtube.com/embed/a1JxMIp-ZBg" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/a1JxMIp-ZBg" frameborder="0" allowfullscreen>
+	<div class="content">
+	<div id="app">
+        <div id="ytapiplayer"></div>
+                </div>
+            </div>
+            <script type='text/javascript'>
+                var params = {allowScriptAccess: "always", wmode: "opaque"};
+                var atts = {id: "ytplayer"};
+                swfobject.embedSWF("//www.youtube.com/watch?v=a1JxMIp-ZBg?enablejsapi=1&showinfo=0&playerapiid=ytplayer", "ytapiplayer", "840", "356", "8", null, null, params, atts);
+                jQuery('#app').voicebase({
+                    playerId: 'ytplayer',
+                    playerType: 'youtube',
+                    localApp: true
+                });
+            </script>
+        </div>
+		</iframe>
+		
 		<iframe width="560" height="315" src="//www.youtube.com/embed/sR528E5_8yI" frameborder="0" allowfullscreen></iframe>
 	</body>
 </html>
