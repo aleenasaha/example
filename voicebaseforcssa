@@ -29,7 +29,7 @@
                 playerType: 'jwplayer',
                 mediaID: '542465a087cba',
                 apikey: '98B3E98C-001C-1E0A-4272-1F4FC0F5423D',
-                password: '',
+                password: 'whitesky',
                 stream: 'http',
               });
           });
