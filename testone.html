@@ -26,11 +26,8 @@
         </head>
 	<body>
 		<h1> Websites take forever </h1>
-		<div class="content"></div>
-		<div id="app"></div>
-		<div id="ytapiplayer"></div>
-     <script type='text/javascript'>
-                var params = {allowScriptAccess: "always", wmode: "opaque"};
+		<iframe width="560" height="315" <div class="content"></div> <div id="app"></div> <div id="ytapiplayer"></div><script type='text/javascript'>
+            	var params = {allowScriptAccess: "always", wmode: "opaque"};
                 var atts = {id: "ytplayer"};
                 swfobject.embedSWF("//www.youtube.com/watch?v=a1JxMIp-ZBg?enablejsapi=1&showinfo=0&playerapiid=ytplayer", "ytapiplayer", "840", "356", "8", null, null, params, atts);
                 jQuery('#app').voicebase({
@@ -39,6 +36,7 @@
                     localApp: true
                 });
             </script>
+            </iframe>
 		<iframe width="560" height="315" src="//www.youtube.com/embed/sR528E5_8yI" frameborder="0" allowfullscreen></iframe>
 	</body>
 </html>
